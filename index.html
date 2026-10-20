@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luca Martis – Publications</title>
+<meta name="description" content="Luca Martis – Electronic engineer, embedded systems and digital hardware. List of publications.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f6fa;
+    --text: #1d2733;
+    --muted: #5b6673;
+    --accent: #1f4e79;
+    --border: #dde3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11161c;
+      --surface: #1a2129;
+      --text: #e6ebf0;
+      --muted: #9aa6b2;
+      --accent: #7fb2e5;
+      --border: #2a333d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; margin-bottom: 36px; }
+  header > div { flex: 1; min-width: 0; }
+  header img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border); }
+  h1 { margin: 0; font-size: 2.1rem; color: var(--accent); line-height: 1.2; }
+  .role { margin: 4px 0 12px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a, .btn {
+    display: inline-block; padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px;
+    color: var(--accent); text-decoration: none; font-size: 0.9rem; background: var(--surface);
+  }
+  .links a:hover, .btn:hover { border-color: var(--accent); }
+  h2 {
+    font-size: 0.95rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+    border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin: 40px 0 16px;
+  }
+  .about { margin: 0; }
+  ol { list-style: none; padding: 0; margin: 0; }
+  li.pub { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  li.pub:last-child { border-bottom: none; }
+  .title { font-weight: 600; }
+  .authors { color: var(--muted); font-size: 0.95rem; }
+  .authors b { color: var(--text); }
+  .venue { font-style: italic; font-size: 0.95rem; }
+  .summary { margin: 6px 0 8px; font-size: 0.95rem; }
+  .tag { font-size: 0.75rem; font-weight: 600; color: var(--accent); margin-left: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .btns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn { font-size: 0.8rem; padding: 2px 10px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="photo.jpg" alt="Luca Martis">
+    <div>
+      <h1>Luca Martis</h1>
+      <p class="role">Electronic Engineer · Embedded Systems · Digital Design FPGA/ASIC</p>
+      <div class="links">
+        <a href="mailto:lucamartis0035@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/luca-martis-2145b322b/">LinkedIn</a>
+        <a href="https://github.com/LucaMartis00">GitHub</a>
+        <a href="https://orcid.org/0009-0002-6501-9506">ORCID</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p class="about">Electronic engineer specialised in embedded systems, completing a PhD in Electronic and Computer Engineering at the University of Cagliari, with a research stay in the PULP Group at ETH Zürich. My work covers the whole development flow of low-power digital hardware for AI: neural network training, RTL design in Verilog, implementation on FPGA and ASIC, and deployment of the trained network on the designed system.</p>
+  </section>
+
+  <section>
+    <h2>Journal articles</h2>
+    <ol>
+      <li class="pub">
+        <div class="title">SYNtzulA: Open Hardware for Near-Sensor SNN Inference <span class="tag">First author</span></div>
+        <div class="authors"><b>L. Martis</b>, G. Leone, L. Raffo, P. Meloni</div>
+        <div class="venue">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 45, no. 8, 2026</div>
+        <p class="summary">A system-on-chip with a RISC-V core and a dedicated spiking neural network accelerator, designed with the open-source IHP SG13G2 130 nm PDK and the OpenROAD flow.</p>
+        <div class="btns">
+          <a class="btn" href="https://doi.org/10.1109/TCAD.2025.3645186">Paper</a>
+          <a class="btn" href="https://github.com/EOLAB-2025/SYNtzulA">Code</a>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="title">SYNtzulu: A Tiny RISC-V-Controlled SNN Processor for Real-Time Sensor Data Analysis on Low-Power FPGAs</div>
+        <div class="authors">G. Leone, M. A. Scrugli, L. Badas, <b>L. Martis</b>, L. Raffo, P. Meloni</div>
+        <div class="venue">IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 72, no. 2, 2025</div>
+        <p class="summary">A RISC-V-controlled SNN processor for low-cost, low-power FPGAs, evaluated on neural decoding, ECG arrhythmia and sEMG gesture recognition.</p>
+        <div class="btns">
+          <a class="btn" href="https://doi.org/10.1109/TCSI.2024.3450966">Paper</a>
+          <a class="btn" href="https://github.com/gianlucaleone/SYNtzulu">Code</a>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="title">Low-Power FPGA-Based Spiking Neural Networks for Real-Time Decoding of Intracortical Neural Activity <span class="tag">First author</span></div>
+        <div class="authors"><b>L. Martis</b>, G. Leone, L. Raffo, P. Meloni</div>
+        <div class="venue">IEEE Sensors Journal, vol. 24, no. 24, 2024</div>
+        <p class="summary">A real-time neural decoder on a Lattice iCE40 FPGA that reconstructs hand movement from 96-channel intracortical recordings.</p>
+        <div class="btns">
+          <a class="btn" href="https://doi.org/10.1109/JSEN.2024.3487021">Paper</a>
+          <a class="btn" href="https://github.com/LucaMartis00/SNN-Training-scheme">Code</a>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Conference papers</h2>
+    <ol>
+      <li class="pub">
+        <div class="title">SYNtzulA: Open-Source Hardware for Energy-Efficient Spiking Neural Network Inference <span class="tag">First author</span></div>
+        <div class="authors"><b>L. Martis</b>, G. Leone, L. Raffo, P. Meloni</div>
+        <div class="venue">ACM International Conference on Computing Frontiers (CF '25), 2025 – oral presentation</div>
+        <div class="btns">
+          <a class="btn" href="https://doi.org/10.1145/3706594.3726979">Paper</a>
+          <a class="btn" href="https://github.com/EOLAB-2025/SYNtzulA">Code</a>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="title">Enabling SNN-Based Near-MEA Neural Decoding with Channel Selection: An Open-HW Approach</div>
+        <div class="authors">G. Leone, <b>L. Martis</b>, L. Raffo, P. Meloni</div>
+        <div class="venue">Design, Automation and Test in Europe Conference (DATE), 2025</div>
+      </li>
+      <li class="pub">
+        <div class="title">Spiking Neural Networks for Near-Sensor Processing: An Open-Hardware Experience <span class="tag">First author</span></div>
+        <div class="authors"><b>L. Martis</b>, G. Leone, L. Raffo, P. Meloni</div>
+        <div class="venue">CPS Workshop 2024, CEUR Workshop Proceedings, vol. 3960, 2024</div>
+        <div class="btns">
+          <a class="btn" href="https://ceur-ws.org/Vol-3960/">Proceedings</a>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="title">Exploiting FPGAs and Spiking Neural Networks at the Micro-Edge: The EdgeAI Approach</div>
+        <div class="authors">P. Meloni, P. Busia, G. Leone, <b>L. Martis</b>, M. A. Scrugli</div>
+        <div class="venue">Applied Reconfigurable Computing (ARC 2024), Springer, 2024</div>
+      </li>
+      <li class="pub">
+        <div class="title">Spiking Neural Networks for Integrated Reach-to-Grasp Decoding on FPGAs</div>
+        <div class="authors">G. Leone, <b>L. Martis</b>, L. Raffo, P. Meloni</div>
+        <div class="venue">IEEE Biomedical Circuits and Systems Conference (BioCAS), 2023</div>
+        <div class="btns">
+          <a class="btn" href="https://doi.org/10.1109/BioCAS58349.2023.10389037">Paper</a>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="title">On-FPGA Spiking Neural Networks for Multi-Variable End-to-End Neural Decoding</div>
+        <div class="authors">G. Leone, <b>L. Martis</b>, L. Raffo, P. Meloni</div>
+        <div class="venue">Applied Reconfigurable Computing (ARC 2023), Springer, 2023</div>
+      </li>
+    </ol>
+  </section>
+
+  <footer>Last updated: October 2026</footer>
+</main>
+</body>
+</html>
